@@ -22,8 +22,26 @@
         margin-bottom: 50px;
     }
 
+    #image {
+        display: none;
+    }
+
     footer p {
         font-size: 0.85rem;
+    }
+
+    .listBrand {
+        flex-wrap: wrap;
+    }
+    
+    .listBrand li {
+        flex-basis: 46%; /* Divide as colunas em 2 em telas menores */
+        text-align: center; /* Centralize o conteúdo */
+    }
+    
+    .listBrand img {
+        max-width: 100%; /* Evita que as imagens ultrapassem a largura da coluna */
+        height: auto; /* Mantém a proporção da imagem */
     }
 }
 
@@ -32,12 +50,19 @@
         max-width: 1200px;
     }
     
+    .menu {
+        padding: 30px;
+    }
+
     #links {
         display: flex;
     }
 
     #optionsNav {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
     #iconMenu {
