@@ -22,7 +22,11 @@
         margin-bottom: 50px;
     }
 
-    #image {
+    .contentRight {
+        display: none;
+    }
+
+    #image img {
         display: none;
     }
 
@@ -49,13 +53,13 @@
     .app {
         max-width: 1200px;
     }
-    
-    .menu {
-        padding: 30px;
-    }
 
     #links {
         display: flex;
+    }
+
+    .contentLeft {
+        padding-right: 80px;
     }
 
     #optionsNav {
@@ -67,5 +71,47 @@
 
     #iconMenu {
         display: none;
+    }
+
+
+    .listBrand {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0 50px;
+    }
+}
+
+/* Defina uma nova regra de media query para telas menores que 768px */
+@media screen and (max-width: 768px) and (min-width: 480px){
+    #links {
+        display: none;
+    }
+
+    #image {
+        padding-right: 20px;
+    }
+
+    #iconMenu {
+        display: none;
+    }
+
+    .listBrand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .listBrand li {
+        flex-basis: 46%; /* Divide as colunas em 2 em telas menores */
+        text-align: center; /* Centralize o conteúdo */
+    }
+    
+    .listBrand img {
+        max-width: 100%; /* Evita que as imagens ultrapassem a largura da coluna */
+        height: auto; /* Mantém a proporção da imagem */
     }
 }
