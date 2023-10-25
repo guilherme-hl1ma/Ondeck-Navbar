@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 480px) {
+    .app {
+        min-width: 320px;
+        max-width: 480px;
+        padding: 10px;
+    }
+
+    .menu {
+        margin-bottom: 30px;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #optionsNav {
+        display: none;
+    }
+
+    .footer {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .app {
+        max-width: 1200px;
+    }
+    
+    #links {
+        display: flex;
+    }
+
+    #optionsNav {
+        display: flex;
+    }
+
+    #iconMenu {
+        display: none;
+    }
+}
