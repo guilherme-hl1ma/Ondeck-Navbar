@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    color: rgb(157, 157, 157);
+    color: rgb(103, 103, 103);
 }
 
 :root {
@@ -57,11 +57,26 @@ body {
     color: var(--txt-yellow);
 }
 
+#description {
+    margin-bottom: 5px;
+}
+
+.listFeedback{
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 25px;
+    gap: 15px;
+}
+
 .footer {
     width: 100%;
 }
 
-
+footer p {
+    margin-bottom: 20px;
+}
 
 .btnTry {
     background-color: #264a27;
