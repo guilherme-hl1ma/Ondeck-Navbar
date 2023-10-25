@@ -87,13 +87,13 @@
     #links {
         display: none;
     }
+    
+    #iconMenu {
+        display: none;
+    }
 
     #image {
         padding-right: 20px;
-    }
-
-    #iconMenu {
-        display: none;
     }
 
     .listBrand {
