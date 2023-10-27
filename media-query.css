@@ -73,6 +73,14 @@
         display: none;
     }
 
+    .modal-mobile {
+        display: none;
+    }
+
+    .modal-content {
+        display: none;
+    }
+
     .listBrand {
         display: flex;
         width: 85%;
@@ -98,6 +106,14 @@
     }
 
     #btn-menu {
+        display: none;
+    }
+
+    .modal-mobile {
+        display: none;
+    }
+
+    .modal-content {
         display: none;
     }
 

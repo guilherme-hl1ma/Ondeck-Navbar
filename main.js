@@ -1,13 +1,25 @@
-const btnMenu = document.getElementById('btn-menu');
-const modalMobile = document.getElementById('modal-mobile');
-const closeModalMobile = document.getElementById('close-modal-mobile');
+// Get the modal
+var modal = document.getElementById("modal-mobile");
 
-btnMenu.addEventListener('click', function() {
-    modalMobile.style.display = 'block';
-    btnMenu.style.display = 'none';
-});
+// Get the button that opens the modal
+var btn = document.getElementById("btn-menu");
 
-closeModalMobile.addEventListener('click', function() {
-    modalMobile.style.display = 'none';
-    btnMenu.style.display = 'block';
-});
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
