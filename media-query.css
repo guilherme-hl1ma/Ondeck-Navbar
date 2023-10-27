@@ -69,10 +69,9 @@
         gap: 20px;
     }
 
-    #iconMenu {
+    #btn-menu {
         display: none;
     }
-
 
     .listBrand {
         display: flex;
@@ -93,12 +92,12 @@
 }
 
 /* Defina uma nova regra de media query para telas menores que 768px */
-@media screen and (max-width: 768px) and (min-width: 480px){
+@media screen and (max-width: 768px) and (min-width: 481px){
     #links {
         display: none;
     }
 
-    #iconMenu {
+    #btn-menu {
         display: none;
     }
 
