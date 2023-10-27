@@ -9,4 +9,5 @@ btnMenu.addEventListener('click', function() {
 
 closeModalMobile.addEventListener('click', function() {
     modalMobile.style.display = 'none';
+    btnMenu.style.display = 'block';
 });
