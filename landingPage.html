@@ -15,21 +15,70 @@
 
     <link rel="stylesheet" href="media-query.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="modal-mobile.css">
 
     <title>Ondeck</title>
   </head>
   <body>
     <div class="app">
-      <nav class="menu">
+      <nav class="menu" id="menu">
         <div><img src="Assets/Logo.svg" alt="" /></div>
+        <div class="dropdownBackground">
+          <span class="arrow"></span>
+        </div>
         <ul class="listItem" id="links">
-          <li>Products</li>
-          <li>Challenges</li>
-          <li>Resources</li>
-          <li>Other Links</li>
+          <li>
+            <div class="dropdown">
+              <a href="#">Products</a>
+              <div class="dropdown-content">
+                <div class="body-modal">
+                  <h2 class="title-body-modal">
+                    <span class="img-title"
+                      ><img src="Assets/Spense_Icon.svg" alt="" /></span
+                    >Spense
+                  </h2>
+                  <p class="txt-body-modal">
+                    Spense is a landing page for writters. Great for practicing
+                    absolute postioning and flex layouts.
+                  </p>
+                  <h2 class="title-body-modal">
+                    <span class="img-title"
+                      ><img src="Assets/Fiber_Icon.svg" alt="" /></span
+                    >Fiber Landing Page
+                  </h2 class="title-body-modal">
+                  <p class="txt-body-modal">
+                    An online portifolio generator. Great to practice flex/grid
+                    layouts, and absolute positioning.
+                  </p>
+                  <h2 class="title-body-modal">
+                    <span class="img-title"
+                      ><img src="Assets/Gradie_Icon.svg" alt="" /></span
+                    >Gradie Sign Up Page
+                  </h2>
+                  <p  class="txt-body-modal">
+                    Gradie is a simple sign up page, great to practice centering
+                    layouts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Challenges</a>
+
+          </li>
+          <li>
+            <a href="#">Resources</a>
+
+          </li>
+          <li>
+            <a href="#">Other Links</a>
+
+          </li>
         </ul>
         <div id="optionsNav">
-          <a href="">Sign in</a>
+          <a href="" class="txt-signIn">Sign in</a>
           <button class="btnTry">Try for free</button>
         </div>
         <button id="btn-menu">
@@ -108,5 +157,6 @@
       </footer>
     </div>
     <script src="main.js"></script>
+    <script src="dropdown.js"></script>
   </body>
 </html>
